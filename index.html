@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovate Corp - Driving the Future</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+
+</head>
+<body class="antialiased">
+
+    
+    <header class="main-header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo-highlight">Innovate</span>Corp
+                </a>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link active" onclick="showPage('home', this)">Home</a>
+                    <a href="#about" class="nav-link" onclick="showPage('about', this)">About Us</a>
+                    <a href="#contact" class="nav-link" onclick="showPage('contact', this)">Contact</a>
+                </div>
+                <button id="mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </nav>
+            
+            <div id="mobile-menu">
+                <a href="#home" onclick="showPage('home', this); closeMenu();">Home</a>
+                <a href="#about" onclick="showPage('about', this); closeMenu();">About Us</a>
+                <a href="#contact" onclick="showPage('contact', this); closeMenu();">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        
+        <main id="home" class="page-visible">
+           
+            <section class="text-center">
+                <h1 class="hero-title">
+                    Pioneering <span class="logo-highlight">Digital Solutions</span> for a New Era
+                </h1>
+                <p class="hero-subtitle">
+                    We architect and build scalable, high-performance web applications that drive business growth and user engagement.
+                </p>
+                <button class="btn" onclick="showPage('contact', document.querySelector('a[href=\'#contact\']'))">
+                    Get in Touch
+                </button>
+                 <div class="hero-image-wrapper">
+                    <img src="https://placehold.co/1200x600/1f2937/3b82f6?text=Modern+Workspace" alt="Modern Workspace">
+                </div>
+            </section>
+
+            
+            <section style="margin-top: 6rem;">
+                <h2 class="section-title">What We Offer</h2>
+                <div class="grid grid-md-3">
+                    <div class="card">
+                        <h3>Web Development</h3>
+                        <p>Crafting bespoke websites and applications with cutting-edge technologies for optimal performance and user experience.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Cloud Solutions</h3>
+                        <p>Leveraging cloud infrastructure to build resilient, scalable, and secure systems that grow with your business.</p>
+                    </div>
+                    <div class="card">
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and beautiful interfaces that captivate users and make technology a joy to use.</p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="feature-section">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Us?</h2>
+                    <div class="grid grid-md-3 text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <svg width="32" height="32" class="text-blue-400" fill="none" stroke="#c084fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Expert Team</h3>
+                            <p>Our team consists of industry veterans with a passion for excellence and innovation.</p>
+                        </div>
+                        <div>
+                            <div class="feature-icon">
+                               <svg width="32" height="32" class="text-blue-400" fill="none" stroke="#c084fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Innovative Solutions</h3>
+                            <p>We stay ahead of the curve, implementing the latest technologies to deliver future-proof results.</p>
+                        </div>
+                        <div>
+                           <div class="feature-icon">
+                                <svg width="32" height="32" class="text-blue-400" fill="none" stroke="#c084fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                            </div>
+                            <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem;">Customer-Centric</h3>
+                            <p>Your success is our priority. We work closely with you to understand and achieve your goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section style="margin-top: 6rem;">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="grid grid-md-2">
+                    <div class="testimonial-card">
+                        <p>"InnovateCorp transformed our online presence. Their attention to detail and commitment to quality is unparalleled. We couldn't be happier with the result."</p>
+                        <footer>- Jane Doe, CEO of TechStrive</footer>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Working with this team was a breeze. They delivered on time, on budget, and exceeded all our expectations. Highly recommended!"</p>
+                        <footer>- John Smith, Founder of MarketNext</footer>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+      
+        <main id="about" class="page-hidden">
+            <section>
+                <h1 class="section-title">About <span class="logo-highlight">InnovateCorp</span></h1>
+                <div class="about-content">
+                    <div>
+                         <img src="https://placehold.co/600x400/1f2937/3b82f6?text=Our+Team" alt="Our Team">
+                    </div>
+                    <div class="about-text">
+                        <h2>Our Mission</h2>
+                        <p>
+                            Our mission is to empower businesses with transformative digital tools and strategies. We believe in the power of technology to solve complex problems, create opportunities, and foster innovation. We are dedicated to our clients' success, building partnerships based on trust and a shared vision for the future.
+                        </p>
+                        <h2>Our Story</h2>
+                        <p>
+                            Founded in 2020 by a group of passionate developers and designers, InnovateCorp started with a simple idea: to make great technology accessible. From our humble beginnings, we have grown into a trusted partner for companies of all sizes, helping them navigate the digital landscape with confidence and creativity.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section style="margin-top: 6rem;">
+                <h2 class="section-title">Our Core Values</h2>
+                <div class="grid grid-md-3 text-center">
+                    <div class="card">
+                        <h3>Integrity</h3>
+                        <p>We believe in honest and transparent communication with our clients and partners.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Collaboration</h3>
+                        <p>The best results come from working together, sharing ideas, and supporting one another.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Excellence</h3>
+                        <p>We are committed to delivering the highest quality work and continuously improving our craft.</p>
+                    </div>
+                </div>
+            </section>
+
+             
+            <section style="margin-top: 6rem;">
+                <h2 class="section-title">Meet the Team</h2>
+                <div class="grid grid-md-3">
+                    <div class="team-member text-center">
+                        <img src="https://placehold.co/400x400/1f2937/ffffff?text=Person+1" alt="Team Member 1">
+                        <h3>Alex Johnson</h3>
+                        <p>Founder & CEO</p>
+                    </div>
+                     <div class="team-member text-center">
+                        <img src="https://placehold.co/400x400/1f2937/ffffff?text=Person+2" alt="Team Member 2">
+                        <h3>Maria Garcia</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                     <div class="team-member text-center">
+                        <img src="https://placehold.co/400x400/1f2937/ffffff?text=Person+3" alt="Team Member 3">
+                        <h3>David Chen</h3>
+                        <p>Head of Design</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+       
+        <main id="contact" class="page-hidden">
+            <section>
+                <h1 class="section-title">Get In Touch</h1>
+                <p class="text-center" style="max-width: 42rem; margin: -2rem auto 3rem auto; color: #9ca3af;">Have a project in mind? We'd love to hear from you. Fill out the form below or reach out to us through our other contact channels.</p>
+                <div class="contact-wrapper">
+                    
+                    <div class="contact-form">
+                         <h2>Send us a Message</h2>
+                        <form id="contact-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn">Send Message</button>
+                            </div>
+                        </form>
+                        <div id="form-success-message">
+                            Thank you for your message! We'll get back to you shortly.
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg width="24" height="24" fill="none" stroke="#c084fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div class="contact-info-text">
+                                <h3>Address</h3>
+                                <p>123 Innovation Drive, Tech City, 10101</p>
+                            </div>
+                        </div>
+                         <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg width="24" height="24" fill="none" stroke="#c084fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            </div>
+                            <div class="contact-info-text">
+                                <h3>Email</h3>
+                                <p>contact@innovatecorp.com</p>
+                            </div>
+                        </div>
+                         <div class="contact-info-item">
+                            <div class="contact-info-icon">
+                                <svg width="24" height="24" fill="none" stroke="#c084fc" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            </div>
+                            <div class="contact-info-text">
+                                <h3>Phone</h3>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 InnovateCorp. All rights reserved.</p>
+            <p>Built for a university assignment with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        const pages = document.querySelectorAll('main');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        
+        function showPage(pageId, clickedLink) {
+            
+            pages.forEach(page => {
+                page.classList.remove('page-visible');
+                page.classList.add('page-hidden');
+            });
+            
+           
+            const targetPage = document.getElementById(pageId);
+            if(targetPage) {
+                targetPage.classList.remove('page-hidden');
+                targetPage.classList.add('page-visible');
+            }
+            
+            
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+            });
+             
+            const correspondingDesktopLink = document.querySelector(`.nav-links a[href="#${pageId}"]`);
+            if (correspondingDesktopLink) {
+                correspondingDesktopLink.classList.add('active');
+            }
+
+            
+            if(event) event.preventDefault();
+            window.scrollTo(0, 0); 
+        }
+        
+        
+        function closeMenu() {
+            mobileMenu.style.display = 'none';
+        }
+
+        
+        mobileMenuButton.addEventListener('click', () => {
+            const isHidden = mobileMenu.style.display === 'none' || mobileMenu.style.display === '';
+            mobileMenu.style.display = isHidden ? 'block' : 'none';
+        });
+
+        
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('form-success-message');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); 
+            
+            
+            successMessage.style.display = 'block';
+            
+            
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+                contactForm.reset();
+            }, 5000);
+        });
+
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage('home', document.querySelector('a[href=\'#home\']'));
+        });
+    </script>
+</body>
+</html>
+
+
